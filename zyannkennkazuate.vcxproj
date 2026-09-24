@@ -19,7 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="janken.cpp.h" />
+    <ClCompile Include="kazuate.cpp" />
     <ClCompile Include="zyannkenn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kazuate.cpp.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
