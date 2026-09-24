@@ -7,5 +7,7 @@ namespace Janken
 
 	enum class Result{Draw,win,Lose};
 
-	void P
+	void PlayGame();
 }
+
+#endif;
