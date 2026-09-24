@@ -14,5 +14,9 @@ void playjanken()
 	int playerInput;
 	cin >> playerInput;
 
-	
+	if (playerInput < 0 || playerInput >= static_cast<int>(ZankenHand::MAX))
+	{
+		cout << "無効な入力です。" << endl;
+		return;
+	}
 }
