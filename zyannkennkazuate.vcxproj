@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="janken.cpp.h" />
     <ClCompile Include="kazuate.cpp" />
+    <ClCompile Include="meinnmenyu.cpp" />
     <ClCompile Include="zyannkenn.cpp" />
   </ItemGroup>
   <ItemGroup>
