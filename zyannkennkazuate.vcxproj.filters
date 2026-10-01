@@ -32,7 +32,7 @@
     <ClInclude Include="kazuate.cpp.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="zennbu.cpp.h">
+    <ClInclude Include="meinnmenyu.cpp.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
