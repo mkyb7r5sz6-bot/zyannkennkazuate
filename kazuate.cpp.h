@@ -1,24 +1,27 @@
-#ifndef KAZUATE_H
+﻿#ifndef KAZUATE_H
 #define KAZUATE_H
 
 #include <iostream>
 using namespace std;
 
 
-enum Hint {
+enum Hint 
+{
     HINT_LOWER = 0, 
     HINT_HIGHER,    
     HINT_EQUAL     
 };
 
 
-enum GameStatus {
+enum GameStatus 
+{
     STATUS_PLAYING,
     STATUS_CLEAR,
     STATUS_GAMEOVER
 };
 
-struct KazuateState {
+struct KazuateState 
+{
     int answer;       
     int currentGuess;
     int attempts;     

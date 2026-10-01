@@ -4,11 +4,13 @@
 #include "zennbu.cpp.h"
 using namespace std;
 
-int main() {
+int main() 
+{
     srand((unsigned int)time(nullptr)); 
 
     int choice = 0;
-    while (true) {
+    while (true) 
+    {
         cout << "\n=== GAME MENU ===\n";
         cout << "1: じゃんけんゲーム\n";
         cout << "2: 数当て\n";
@@ -16,17 +18,21 @@ int main() {
         cout << "Select (1-3): ";
         cin >> choice;
 
-        if (choice == 1) {
+        if (choice == 1) 
+        {
             playJanken(); 
         }
-        else if (choice == 2) {
+        else if (choice == 2)
+        {
             playKazuate(); 
         }
-        else if (choice == 3) {
+        else if (choice == 3) 
+        {
             cout << "Good bye!\n";
             break;
         }
-        else {
+        else
+        {
             cout << "Invalid choice. Please re-enter.\n";
         }
     }

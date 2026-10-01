@@ -1,16 +1,19 @@
-#include <cstdlib>
+﻿#include <cstdlib>
 #include "janken.cpp.h"
 
 
 const char* const HAND_NAMES[] = { "Rock", "Scissors", "Paper" };
 
-void printHand(Hand hand) {
-    if (hand >= ROCK && hand <= PAPER) {
+void printHand(Hand hand) 
+{
+    if (hand >= ROCK && hand <= PAPER) 
+    {
         cout << HAND_NAMES[hand] << "\n"; 
     }
 }
 
-Result judge(Hand playerHand, Hand cpuHand) {
+Result judge(Hand playerHand, Hand cpuHand) 
+{
     if (playerHand == cpuHand) return DRAW;
 
     if ((playerHand == ROCK && cpuHand == SCISSORS) ||
@@ -21,20 +24,23 @@ Result judge(Hand playerHand, Hand cpuHand) {
     return LOSE;
 }
 
-void playJanken() {
+void playJanken() 
+{
     JankenState state = { "nanashi", 0, 0, 0, 1 };
 
     cout << "Enter your name: ";
     cin >> state.name;
     cout << "Welcome, " << state.name << "! Let's start Janken!\n";
 
-    while (state.wins < 3 && state.losses < 3) {
+    while (state.wins < 3 && state.losses < 3)
+    {
         cout << "\n[Round " << state.round << "]\n";
         cout << "Choose your hand (0: Rock, 1: Scissors, 2: Paper): ";
         int input;
         cin >> input;
 
-        if (input < 0 || input > 2) {
+        if (input < 0 || input > 2) 
+        {
             cout << "Invalid choice.\n";
             continue;
         }
@@ -46,17 +52,20 @@ void playJanken() {
         cout << "CPU: "; printHand(cpuHand);
 
         Result res = judge(playerHand, cpuHand);
-        if (res == WIN) {
+        if (res == WIN) 
+        {
             cout << "Result: You WIN this round!\n";
             state.wins++;
             state.round++;
         }
-        else if (res == LOSE) {
+        else if (res == LOSE) 
+        {
             cout << "Result: You LOSE this round!\n";
             state.losses++;
             state.round++;
         }
-        else {
+        else 
+        {
             cout << "Result: DRAW!\n";
             state.draws++;
         }

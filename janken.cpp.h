@@ -1,25 +1,28 @@
-#ifndef JANKEN_H
+﻿#ifndef JANKEN_H
 #define JANKEN_H
 
 #include <iostream>
 using namespace std;
 
 
-enum Hand {
+enum Hand 
+{
     ROCK = 0,
     SCISSORS,
     PAPER,
     INVALID_HAND
 };
 
-enum Result {
+enum Result
+{
     DRAW = 0,
     WIN = 1,
     LOSE = -1
 };
 
 
-struct JankenState {
+struct JankenState 
+{
     char name[50];
     int wins;
     int losses;
