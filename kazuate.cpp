@@ -1,4 +1,4 @@
-﻿#include "kazuate.cpp.h"
+﻿#include "zennbu.cpp.h"
 #include <cstdlib>
 
 

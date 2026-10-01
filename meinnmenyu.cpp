@@ -1,8 +1,7 @@
-#include <iostream>
+﻿#include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "janken.cpp.h"
-#include "kazuate.cpp.h"
+#include "zennbu.cpp.h"
 using namespace std;
 
 int main() {
@@ -11,9 +10,9 @@ int main() {
     int choice = 0;
     while (true) {
         cout << "\n=== GAME MENU ===\n";
-        cout << "1: Janken Game\n";
-        cout << "2: Guessing Game (Kazuate)\n";
-        cout << "3: Exit\n";
+        cout << "1: じゃんけんゲーム\n";
+        cout << "2: 数当て\n";
+        cout << "3: 終了\n";
         cout << "Select (1-3): ";
         cin >> choice;
 
